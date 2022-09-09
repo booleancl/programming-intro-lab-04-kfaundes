@@ -7,6 +7,7 @@ import time
 # Esto es una tecnica muy poderosa para ciertos problemas
 
 # Funcion conteo regresivo
+# Es una funcion que se llama a si misma
 def countdown(number):
   if number <= 0:
      print("KABUMM")
@@ -19,12 +20,15 @@ countdown(5)
  
  # Otro ejemplo para hacer una sumatoria
 def super_sum(number):
-    sum = 0
-   if number <= 0:
+  if number <= 0:
     return number
-   else:
+  else:
     return number + super_sum(number - 1)
 
-print(super_sum(10))
+print(super_sum(3))
 
+# Recurcion infinita , sin condicion de salida
+# para nada útil, pero entretenida
+def infinite():
+  infinite()
   
